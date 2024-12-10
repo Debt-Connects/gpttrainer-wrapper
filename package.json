@@ -1,0 +1,27 @@
+{
+  "name": "dc-buntemplate", /* da name of module. */
+  "module": "index.ts", /* entrypoint */
+  "type": "module", /* declare ecm not commonjs */
+  "private": "true", /* please make sure you have this in each package.json. It'll prevent uploading the entire repo our npm org */
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dc-blah": "workspace:*"
+  }, 
+  /* 
+    only ever add dependencies that are shared across your entire app here in the root package.json
+    do not add dependencies that are already included in your imported module. This will cauase a dependency issue
+    it's just not fun to debug trust.
+  */
+  "workspaces": [
+    "src/*"
+  ] /*
+      this should only be used like this in the context of this repo but it allows for modules located in ./src to be 
+      imported from other packages in the repo just like you would a external npm module. Creating a structure that you can tree-shake
+      and seperate code interests. Keeps things maintainable and clean.
+  */
+}

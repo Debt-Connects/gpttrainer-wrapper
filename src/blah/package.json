@@ -1,0 +1,26 @@
+{
+    "name": "dc-blah", 
+    /* 
+        name of package-
+        choose carefully as this is how you ref-
+        this module in other packages. Add -
+        "yourpackagenamehere": "workspace:*"
+        in another module's devDependencies, dependencies,  etc-
+        to ref this module
+    */
+    "version": "1.0.0", /* le version, uses semver standards */
+    "type": "module", /* identify as module, not CMJS */
+    "module": "./index.ts", /* entrypoint to module */
+    "bin": "./bin", 
+    /* 
+        this dir is includes any binary files that-
+        your module requires to run. Ex: tsc, random.exe, etc
+        this can be just a compiled module as well
+    */
+    "author": {
+        /* Make sure to credit yourself */
+        "name": "Bryce Cain",
+        "email": "bryce.cain@debtconnects.com",
+        "url": "https://github.com"
+    }
+}

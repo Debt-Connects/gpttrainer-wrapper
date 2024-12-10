@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "HACK-BOLD";
+    src: url("../fonts/Hack/Hack-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HACK-BOLD-ITALIC";
+    src: url("../fonts/Hack/Hack-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HACK-REGULAR";
+    src: url("../fonts/Hack/Hack-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HACK-ITALIC";
+    src: url("../fonts/Hack/Hack-Italic.ttf") format("truetype");
+}
